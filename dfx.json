@@ -1,19 +1,9 @@
 {
   "version": 1,
-  "dfx": "0.8.5-beta.0",
   "canisters": {
     "ic_tax": {
       "type": "motoko",
-      "main": "src/ic_tax/main.mo"
-    },
-    "ic_tax_assets": {
-      "type": "assets",
-      "source": [
-        "src/ic_tax_assets/assets"
-      ],
-      "dependencies": [
-        "ic_tax"
-      ]
+      "main": "src/main.mo"
     }
   },
   "defaults": {
