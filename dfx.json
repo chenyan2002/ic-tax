@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dfx": "0.8.5-beta.0",
+  "canisters": {
+    "ic_tax": {
+      "type": "motoko",
+      "main": "src/ic_tax/main.mo"
+    },
+    "ic_tax_assets": {
+      "type": "assets",
+      "source": [
+        "src/ic_tax_assets/assets"
+      ],
+      "dependencies": [
+        "ic_tax"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
